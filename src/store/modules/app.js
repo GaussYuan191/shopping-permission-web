@@ -30,7 +30,7 @@ const app = {
     }
   },
   actions: {
-    TaggleSideBar: ({ commit }) => {
+    'ToggleSideBar': ({ commit }) => {
       commit('TOGGLE_SIDEBAR')
     },
     CloseSideBar ({ commit }, { withoutAnimation }) {

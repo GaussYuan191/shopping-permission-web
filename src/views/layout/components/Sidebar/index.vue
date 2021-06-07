@@ -27,7 +27,7 @@
         'routers'
       ]),
       routes () {
-        // return this.$router.options.routes
+
         return this.routers
       },
       isCollapse () {
