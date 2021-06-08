@@ -89,7 +89,6 @@ const permission = {
 
             if (v.children && v.children.length > 0) {
               v.children = v.children.filter(child => {
-                console.log('孩子',child)
                 if (hasPermission(menus, child)) {
                   return child
                 }
