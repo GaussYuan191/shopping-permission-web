@@ -43,7 +43,7 @@
     </div>
 </template>
 <script>
-  import {fetchList,closeOrder,deleteOrder} from '@/api/order'
+  import {fetchList} from '@/api/order'
   import {formatDate} from '@/utils/date';
 
   const defaultListQuery = {
@@ -135,6 +135,7 @@
     filters: {
       formatCreateTime(time) {
         let date = new Date(time);
+        console.log('s',time)
         return formatDate(date, 'yyyy-MM-dd hh:mm:ss')
       },
       formatPayType(value) {
@@ -170,34 +171,15 @@
       },
     },
     methods: {
-      handleResetSearch() {
-        this.listQuery = Object.assign({}, defaultListQuery);
-      },
-      handleSearchList() {
-        this.listQuery.pageNum = 1;
-        this.getList();
-      },
-      handleSelectionChange(val){
-        this.multipleSelection = val;
-      },
-
-
-
-
-      handleSizeChange(val){
-        this.listQuery.pageNum = 1;
-        this.listQuery.pageSize = val;
-        this.getList();
-      },
-
 
       getList() {
         this.listLoading = true;
         fetchList(this.listQuery).then(response => {
           this.listLoading = false;
-          this.list = response.data.list;
-          this.total = response.data.total;
+          this.list = response.data;
+          console.log('数据为',response)
         });
+
       }
 
 
