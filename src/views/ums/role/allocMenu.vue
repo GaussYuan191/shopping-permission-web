@@ -42,6 +42,7 @@
       treeList () {
         fetchTreeList().then(response => {
           this.menuTreeList = response.data
+          console.log('菜单树结构', this.menuTreeList)
         })
       },
       getRoleMenu (roleId) {
