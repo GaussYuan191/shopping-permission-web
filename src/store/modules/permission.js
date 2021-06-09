@@ -82,8 +82,6 @@ const permission = {
         const { menus } = data
         const { username } = data
         const accessedRouters = asyncRouterMap.filter(v => {
-          //admin帐号直接返回所有菜单
-          // if(username==='admin') return true;
 
           if (hasPermission(menus, v)) {
 

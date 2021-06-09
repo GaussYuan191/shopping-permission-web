@@ -27,8 +27,8 @@
         'routers'
       ]),
       routes () {
-
         return this.routers
+
       },
       isCollapse () {
         return !this.sidebar.opened

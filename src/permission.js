@@ -17,8 +17,10 @@ router.beforeEach((to, from, next) => {
         store.dispatch('GetInfo').then(res => { // 拉取用户信息
           let menus = res.data.menus
           let username = res.data.username
+          console.log('前',menus)
           store.dispatch('GenerateRoutes', { menus, username }).then(() => { // 生成可访问的路由表
             router.addRoutes(store.getters.addRouters) // 动态添加可访问路由表
+            console.log('用户r',store.getters.routers)
             next({ ...to, replace: true })
           })
         }).catch((err) => {
