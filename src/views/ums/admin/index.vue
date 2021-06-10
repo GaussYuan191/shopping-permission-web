@@ -323,11 +323,18 @@
       },
       getList () {
         this.listLoading = true
-        fetchList(this.listQuery).then(response => {
-          this.listLoading = false
-          this.list = response.data.list
-          this.total = response.data.total
-        })
+        console.log('分页数据',this.listQuery )
+
+          fetchList(this.listQuery).then(response => {
+            this.listLoading = false
+            this.list = response.data.list
+            this.total = response.data.total
+            console.log('用户信息', this.list)
+            console.log('总数', this.total)
+          })
+
+
+
       },
       getAllRoleList () {
         fetchAllRoleList().then(response => {
