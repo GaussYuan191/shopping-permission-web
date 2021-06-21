@@ -34,6 +34,11 @@
                 <el-table-column label="销量" width="160" align="center">
                     <template slot-scope="scope">{{scope.row.sale}}</template>
                 </el-table-column>
+
+                <el-table-column label="库存" width="160" align="center">
+                    <template slot-scope="scope">{{scope.row.nums - scope.row.sale}}</template>
+                </el-table-column>
+
                 <el-table-column label="上架时间" width="200" align="center">
                     <template slot-scope="scope">{{scope.row.createTime | formatCreateTime()}}</template>
                 </el-table-column>
@@ -102,7 +107,6 @@
           this.listLoading = false;
           this.list = response.data;
           this.total = response.data;
-          console.log('aa',this.list[0].createTime)
         });
 
       },

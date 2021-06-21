@@ -60,7 +60,7 @@ export const asyncRouterMap = [
         path: 'order',
         name: 'order',
         component: () => import('@/views/oms/order/index'),
-        meta: {title: '订单列表', icon: 'product-list'}
+        meta: {title: '订单列表', icon: 'order'}
       }
     ]
   },
