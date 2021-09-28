@@ -8,8 +8,8 @@
 
 [项目后端部分](https://gausstop.coding.net/p/permission/d/shopping-permission/git)
  
- **请在config/dev.env.js  下改服务器代码**
- 
+ **请在config/dev.env.js  下改服务器地址**
+ 测试账号 demo 123456
  服务器地址：http://39.101.202.100:8100
 ## 项目演示
 
