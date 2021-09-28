@@ -7,7 +7,10 @@
 本项目基于Vue+Element框架的快速开发脚手架，拥有完整的权限管理功能。
 
 [项目后端部分](https://gausstop.coding.net/p/permission/d/shopping-permission/git)
-
+ 
+ **请在config/dev.env.js  下改服务器代码**
+ 
+ 服务器地址：http://39.101.202.100:8100
 ## 项目演示
 
 [![RkLsP0.png](https://z3.ax1x.com/2021/06/21/RkLsP0.png)](https://imgtu.com/i/RkLsP0)
