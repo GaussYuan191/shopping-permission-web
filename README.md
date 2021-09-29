@@ -6,7 +6,7 @@
 
 本项目基于Vue+Element框架的快速开发脚手架，拥有完整的权限管理功能。
 
-[项目后端部分](https://gausstop.coding.net/p/permission/d/shopping-permission/git)
+[项目后端部分](https://github.com/GaussYuan191/shopping-permission)
  
  **请在config/dev.env.js  下改服务器地址**
  测试账号 demo 123456
